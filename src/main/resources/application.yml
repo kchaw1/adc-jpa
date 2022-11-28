@@ -12,7 +12,7 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.H2Dialect
-        default_batch_fetch_size: 100
+#        default_batch_fetch_size: 1000
     defer-datasource-initialization: true
   h2:
     console:

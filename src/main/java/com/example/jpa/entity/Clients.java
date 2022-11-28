@@ -26,7 +26,7 @@ public class Clients {
     @JoinColumn(name = "file_id")
     private FileInfo fileInfo;
 
-    @ManyToOne(fetch = FetchType.LAZY) // ManyToOne 단방향
+    @OneToOne(fetch = FetchType.LAZY) // OneToOne 단방향
     @JoinColumn(name = "account_id")
     private Accounts accounts;
 
