@@ -34,8 +34,8 @@ Starting with Hibernate ORM 6 it is no longer necessary to use distinct in JPQL 
 
 ### @ManyToOne
 - 기본 fetch 전략 : EAGER (즉시 로딩)
-- Campaigns(多)과 Clients(1)의 관계 , Clients(多)와 Accounts(1)의 관계 등
-- `@ManyToOne`의 경우 기본적으로 단방향이 가능하면 단방향으로 설계하는것이 좋다. (Clients -> Accounts)
+- Campaigns(多)과 Clients(1)의 관계
+- `@ManyToOne`의 경우 기본적으로 단방향이 가능하면 단방향으로 설계하는것이 좋다.
 - `@JoinColumn(name)` 을 통해 1쪽 엔티티와 조인할 `FK db 필드명` 을 옵션에 넣어주어야 한다.(Campaigns.java:23)
 - 기본 fetch 전략이 `EAGER` 이기 떄문에 <b>반드시</b> `fetch` 옵션을 `LAZY` 로 변경해준다
 
