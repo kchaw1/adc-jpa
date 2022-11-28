@@ -2,7 +2,7 @@ insert into ox_accounts(account_id, account_name) values (1, '테스트 계정')
 insert into ox_file_info(file_id, file_name) values (1, '테스트 파일1');
 
 insert into ox_clients(client_id, client_name, file_id, account_id) values (1, '테스트 클라이언트', 1, 1);
-insert into ox_clients(client_id, client_name, file_id, account_id) values (2, '테스트 클라이언트2', 1, 1);
+insert into ox_clients(client_id, client_name, file_id, account_id) values (2, '테스트 클라이언트2', null, 1);
 
 insert into ox_campaigns(campaign_id, campaign_name, client_id) values (1, '테스트 캠페인1',1);
 insert into ox_campaigns(campaign_id, campaign_name, client_id) values (2, '테스트 캠페인2',1);

@@ -22,4 +22,9 @@ public interface ClientsRepository extends JpaRepository<Clients, Long> {
             "from Clients c " +
             "left join fetch c.extraFeatures " + "where c.clientId = :clientId")
     Clients getClientsWithExtraFeatures(Long clientId);
+
+    @Query("select distinct c " +
+            "from Clients c " +
+            "left join fetch c.fileInfo " + "where c.clientId = :clientId")
+    Clients getClientsWithFileInfo(Long clientId);
 }
