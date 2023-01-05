@@ -1,0 +1,14 @@
+### 목록
+GET http://localhost:8080/geo/list
+
+### 단건
+GET http://localhost:8080/geo/one/2
+
+### 생성
+POST http://localhost:8080/geo
+Content-Type: application/json
+
+{
+  "geo_code": "500",
+  "geo_name": "제주"
+}

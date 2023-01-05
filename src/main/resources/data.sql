@@ -27,3 +27,8 @@ insert into ox_banner_creatives(banner_id, creative_id) values (1, 2);
 insert into ox_banner_creatives(banner_id, creative_id) values (1, 3);
 insert into ox_banner_creatives(banner_id, creative_id) values (2, 1);
 insert into ox_banner_creatives(banner_id, creative_id) values (3, 1);
+
+insert into geo_info(geo_code, geo_name) values (100, '서울');
+insert into geo_info(geo_code, geo_name) values (200, '경기');
+insert into geo_info(geo_code, geo_name) values (300, '인천');
+insert into geo_info(geo_code, geo_name) values (400, '부산');
